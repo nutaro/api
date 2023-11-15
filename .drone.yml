@@ -10,3 +10,15 @@ steps:
   - cd src/
   - npm install
   - npm test
+
+trigger:
+  branch:
+  - master
+  event:
+  - cron
+  - custom
+  - push
+  - pull_request
+  - tag
+  - promote
+  - rollback
